@@ -1,6 +1,3 @@
-.continer{
+.container{
     display:flex;
-}
-nav a {
-    flex:1;
 }
