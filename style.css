@@ -1,28 +1,171 @@
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 body {
-    font-family: Arial, sans-serif; 
-    background-color: white; 
-    color: black; 
-    padding: 20px; 
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: rgba(251, 255, 0, 0.808);
+    color: #333;
+    padding: 0;
+    margin: 0;
 }
 
+header {
+    background: orange;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
 
 nav {
-    background-color: black;
+    background-color: #008CBA;
     text-align: center;
-    padding: 10px; 
+    padding: 10px 0;
 }
 
 nav a {
-    color: white; 
-    text-decoration: none; 
-    padding: 10px 15px; 
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    margin: 0 15px;
+    border-radius: 25px;
 }
 
+nav a:hover {
+    background-color: #f03412;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ff6347;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+nav a {
+    font-size: 1rem;
+    padding: 10px 15px;
+}
+
+img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.food-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.food {
+    text-align: center;
+    width: 280px; 
+}
+
+.food img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+.food h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.food p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+#food-culture {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#food-culture h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#food-culture p {
+    font-size: Arial;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* Simple Landmark Gallery Styles */
+
+.gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.gallery p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 90%;
+    margin: 0 auto;
+}
+
+.image-item {
+    padding: 10px;
+}
+
+.image-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.image-item p {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: #333;
+}
